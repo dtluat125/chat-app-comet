@@ -41,10 +41,8 @@ const CometChatEmojiKeyboard = (props) => {
   const renderItems = () => {
     let emojiJSX = null;
     let emojiCategoryJSX = [];
-    let renderId = null;
     emojiJSX = Emojis?.map((el, i) => {
       const vals = Object?.values(el)[0];
-      renderId = Math.floor(Math.random() * (Emojis?.length - 0) + i);
       /**Each json iteration filter through EmojiCategory class */
       const emojiCategory = new CometChatEmojiCategory({
         id: vals.id,
